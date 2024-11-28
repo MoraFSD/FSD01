@@ -46,15 +46,17 @@
             <div class="main-part">
                 <h2 class = "mb-4">Количество продаж</h2>
                 <div class="d-flex flex-row">
-                    <div class="me-3"><p class="mb-1">Начало периода</p>
-                    <input type="date" id = "startdate" class="border-1 rounded-1"></div>
-                    <div><p class="mb-1">Начало периода</p>
-                    <input type="date" id = "enddate" class="border-1 rounded-1"></div>
-                    <div class="selection border">
-                        <p>Выбранные товары</p>
-                        <select multiple>
+                    <div class="d-flex flex-row flex-grow-1">
+                        <div class="me-3"><p class="mb-1">Начало периода</p>
+                        <input type="date" id = "startdate" class="border-1 rounded-1"></div>
+                        <div><p class="mb-1">Начало периода</p>
+                        <input type="date" id = "enddate" class="border-1 rounded-1"></div>
+                    </div>
+                    <div class="selection fixed-right ms-3 align-self-center">
+                        <button class="btn btn-secondary positibottom-1 top-1">Выбор товаров</button>
+                        <!-- <select multiple>
                             <option value="Крупа Геркулес">Крупа Геркулес</option>
-                        </select>
+                        </select> -->
                     </div>
                 </div>
                 
@@ -63,30 +65,22 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">id</th>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Стоимость</th>
+                            <th scope="col">Количество продаж</th>
+                            <th scope="col">Итого</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td></td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
                         </tbody>
                       </table>
                 </div>
