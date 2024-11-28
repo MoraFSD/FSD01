@@ -42,32 +42,59 @@
                 работы. Некоторые функции могут не работать при его выключении.</noscript>
 
             <h1>Кабинет статистики</h1>
-            
-            
-            <div class="sales">
-                <h2 class = "alert alert-dismissible">Количество продаж</h2>
-                <div class="date">
-                    <p>Начало периода</p>
-                    <input type="date" id = "startdate">
-                    <p>Начало периода</p>
-                    <input type="date" id = "enddate">
+            <hr />
+            <div class="main-part">
+                <h2 class = "mb-4">Количество продаж</h2>
+                <div class="d-flex flex-row">
+                    <div class="me-3"><p class="mb-1">Начало периода</p>
+                    <input type="date" id = "startdate" class="border-1 rounded-1"></div>
+                    <div><p class="mb-1">Начало периода</p>
+                    <input type="date" id = "enddate" class="border-1 rounded-1"></div>
+                    <div class="selection border">
+                        <p>Выбранные товары</p>
+                        <select multiple>
+                            <option value="Крупа Геркулес">Крупа Геркулес</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="selection">
-                    <p>Выбранные товары</p>
-                    <select multiple>
-                        <option value="Крупа Геркулес">Крупа Геркулес</option>
-                    </select>
-                </div>
-                <div class="vievTable">
-                    <table id = "ResultTable">
-                        ghj
-                    </table>
+                
+                <div class="vievTable mt-4">
+                    <h3>Результат запроса</h3> 
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </main>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-light fixed-bottom">
         <div class="col-md-4 d-flex align-items-center">
             При проблемах в работе сайта пишите пожалуйста на мои контакты:
         </div>
