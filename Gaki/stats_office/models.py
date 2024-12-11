@@ -7,15 +7,15 @@ def status_validator(order_status):
 
 class user_data(models.Model):
     name = models.CharField(max_length=50, verbose_name="имя пользователя")
-    email = models.EmailField(verbose_name="email")
-    password = models.CharField(max_length=50, verbose_name="пароль")
-    description = models.DateField(verbose_name="дата Рождения")
-    first_name = models.CharField(max_length=50, verbose_name="имя", null=True)
-    last_name = models.CharField(max_length=50, verbose_name="фамилия", null=True)
-    patronymic = models.CharField(max_length=50, verbose_name="отчетство", null=True)
-    delivery_adress = models.CharField(max_length=150, verbose_name="адрес доставки", null=True)
-    inn_ur = models.CharField(max_length=10, verbose_name="ИНН юр. лица", null=True)
-    inn_fiz = models.CharField(max_length=12, verbose_name="ИНН физ. лица", null=True)
+    # email = models.EmailField(verbose_name="email")
+    # password = models.CharField(max_length=50, verbose_name="пароль")
+    # description = models.DateField(verbose_name="дата Рождения")
+    # first_name = models.CharField(max_length=50, verbose_name="имя", null=True)
+    # last_name = models.CharField(max_length=50, verbose_name="фамилия", null=True)
+    # patronymic = models.CharField(max_length=50, verbose_name="отчетство", null=True)
+    # delivery_adress = models.CharField(max_length=150, verbose_name="адрес доставки", null=True)
+    # inn_ur = models.CharField(max_length=10, verbose_name="ИНН юр. лица", null=True)
+    # inn_fiz = models.CharField(max_length=12, verbose_name="ИНН физ. лица", null=True)
 
     def __str__(self):
         return self.name
@@ -32,7 +32,7 @@ class shop(models.Model):
 class sell_item(models.Model):
     name = models.CharField(max_length=100, verbose_name="название")
     description = models.TextField(verbose_name="описание")
-    image = models.ImageField(verbose_name="название", null=True, blank=True)
+    image = models.ImageField(verbose_name="фотография", null=True, blank=True)
     price = models.DecimalField(decimal_places=2, max_digits=10, verbose_name="цена")
     shop_id = models.ForeignKey(shop, on_delete=models.CASCADE, verbose_name="магазин") 
 
